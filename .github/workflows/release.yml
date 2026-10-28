@@ -21,8 +21,8 @@ jobs:
           $ver = "${{ github.ref_name }}"
           $stage = "dist/ProcessKit-$ver-x64"
           New-Item -ItemType Directory -Force $stage | Out-Null
-          Copy-Item "target/release/processkit.dll" $stage
-          Copy-Item "target/release/processkit.dll.lib" $stage
+          Copy-Item "target/release/process_kit.dll" $stage
+          Copy-Item "target/release/process_kit.dll.lib" $stage
           Copy-Item "include/processkit.h" $stage
           Copy-Item LICENSE $stage
           Copy-Item README.md $stage
